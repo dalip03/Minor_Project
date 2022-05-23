@@ -24,7 +24,7 @@
             <center>
             <div id="headerSection">
             <a href="../"><button id="back-button"> Back</button></a>
-            <a href="logout.php"><button id="logout-button">Logout</button></a>
+            <a href="logout.html"><button id="logout-button">Logout</button></a>
             <h1>Online Voting System</h1>  
             </div>
             </center>
@@ -49,7 +49,7 @@
                                 <img style="float: right" src="../uploads/<?php echo $groups[$i]['photo']?>" height="80" width="80">
                                 <b>Group Name : </b><?php echo $groups[$i]['name']?><br><br>
                                 <b>Votes :</b> <?php echo $groups[$i]['votes']?><br><br>
-                                <form method="POST" action="../api/vote.php">
+                                <form method="POST" action="../api/vote.html">
                                 <input type="hidden" name="gvotes" value="<?php echo $groups[$i]['votes'] ?>">
                                 <input type="hidden" name = "gid" value="<?php echo $groups[$i]['id'] ?>">
                                 <?php
